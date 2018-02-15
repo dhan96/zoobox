@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>ZOOBOX</title>
+</head>
+<style>
+.mySlides {display:none;}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* { box-sizing: border-box; }
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* STRUCTURE */
+
+.wrapper {
+  padding: 5px;
+  max-width: 960px;
+  width: 95%;
+  margin: 20px auto;
+}
+header {
+  padding: 0 15px;
+  margin-top: 10px;
+  font-family: 'Arvo', serif;
+  font-weight: 150px;
+  color: black;
+  font-size: 150%;
+
+}
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid gray;
+  margin: 2px;
+  padding: 10px;
+  &:first-child { margin-left: 0; }
+  &:last-child { margin-right: 0; }
+  
+}
+
+footer {
+  padding: 0 15px;
+}
+
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+    &:nth-last-child(2) {
+      margin-right: 0;
+    }
+    &:last-child {
+      flex-basis: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
+</style>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="font-family: 'Dhurjati', sans-serif; font-size: 200%; font-color: darkred; "><img src="images/logo.png" height="30" width="75"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="mail.html">Mailing List</a></li>
+            <li><a href="blog.html">Recipe Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="menu.html">Menu </a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<center><div class="box"><img src="images/logo.png" style="margin-top: 75px;" height="110" width="420"></div></center>
+<style type="text/css">
+  a:hover, a:active {
+    background-color: lightpink;
+    outline: 1px solid black;
+}
+</style>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <center><h1 style="margin-top: 20px; font-size: 175%;"></h1></center>
+
+  <img class="mySlides w3-animate-fading" src="images/zebra.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/snake.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/bison.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/ostrich.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/croc.jpg" style="width:100%">
+</div>
+
+<center><div class="boxed" style="margin-right: 100px; margin-left: 100px; font-family: 'Lato', sans-serif; font-size: 200%; color: maroon;">"Taste the Flavor of the Zoo"</div></center>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+
+<div class="wrapper">
+
+  <header>
+    <u><center><h1 style="font-family: 'Arvo', serif;
+font-weight: 900; font-color: black; ">Pricing</h1></center></u>
+  </header>
+    
+<section class="columns">
+  
+  <div class="column">
+    <u><center><h2 style="color: maroon;">Quarter-Year Plan</h2></center></u>
+    <center><p style="font-size: 400%; font-family: 'Changa', sans-serif; font-weight: 900; color: black;">$65 1x/year</p></center>
+  </div>
+  
+  <div class="column">
+    <u><center><h2 style="color: maroon;">Half-Year Plan*</h2></center></u>
+    <center><p style="font-size: 400%; font-family: 'Changa', sans-serif; font-weight: 900; color: black;">$55 2x/year</p></center>
+  </div>
+  
+  <div class="column">
+    <u><center><h2 style="color: maroon;">Annual Plan*</h2></center></u>
+    <center><p style="font-size: 400%; font-family: 'Changa', sans-serif; font-weight: 900; color: black;">$50 4x/year</p></center>
+  </div>
+  
+</section>  
+ <footer>
+    <p>*These plans will renew automatically after cycle is complete; customers have ability to cancel at anytime</p>
+  </footer>
+  <footer>
+    <div class="boxed" style="font-family: 'Changa', sans-serif; outline-color: black; outline: solid; margin-top: 25px;"><u><center><h1 style="color: maroon">Each Box</h1></u></center><p style="font-size: 200%; color: maroon;">Each Box Includes:</p><p style="margin-left: 200px; font-size: 150%;"> One Mammal Meat</p><p style="margin-left: 275px;"> - Big Cat or Steak</p><p style="margin-left: 200px; font-size: 150%;">One Non-Mammal Meat</p><p style="margin-left: 275px;"> - Repitiles, Birds, ect... </p><p style="margin-left: 200px; font-size: 150%;">One Specialty Item</p><p style="margin-left: 275px;"> - Sausage, Jerky, Bacon, etc...</p><center><h1 style="color: maroon">Shipping Free in North America!</h1></center><center><h1 style="color: maroon">Coming Soon to European Union!</h1></center></div>
+  </footer>
+
+</div>
+
+</body>
+</html>

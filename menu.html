@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {display:none;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+.header {
+    background-color: maroon;
+    color: #ffffff;
+    padding: 5px;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+    margin-top: 65px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: slategrey;
+    color: maroon;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-left: 15px;
+    font-weight: bold;
+}
+.menu li:hover {
+    background-color: dimgrey;
+}
+.aside {
+    font-family: 'Lora', serif;
+    background-color: maroon;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-right: 15px;
+}
+.footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="font-family: 'Dhurjati', sans-serif; font-size: 200%; font-color: darkred; "><img src="images/logo.png" height="30" width="75"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="mail.html">Mailing List</a></li>
+            <li><a href="blog.html">Recipe Blog</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="menu.html">Menu </a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="header">
+  <h1 style="font-family: 'Lora', serif;">Menu</h1>
+</div>
+
+<div class="row">
+
+<div class="col-3 col-m-3 menu">
+  <ul>
+    <li><a href="carn.html">Big Cats</a></li>
+    <li><a href="non.html">Non-Big Cats</a></li>
+    <li><a href="com.html">Coming Soon!</a></li>
+  </ul>
+</div>
+
+<div class="col-6 col-m-9">
+  <center><h1 style="font-family: 'Lora', serif; font-weight: bold;">Order Our World Famous Zebra <a href="non.html">Now!</a></h1></center>
+  <style type="text/css">
+       a:hover {
+        color: red;
+       }
+
+  </style>
+  <p><div class="w3-content w3-section" style="max-width:500px">
+
+  <img class="mySlides w3-animate-fading" src="images/zebra.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/zebra1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/zebra2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/zebra3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/zebra4.jpg" style="width:100%">
+</div></p>
+</div>
+
+<div class="col-3 col-m-12">
+  <div class="aside">
+    <h2 style="font-family: 'Lora', serif;">Where?</h2>
+    <p>All the animals that are shipped from our facilities are caught in the wild by our suppliers. These animals are hunted professional and every piece of the animal is used.</p>
+    <h2 style="font-family: 'Lora', serif;">From Who?</h2>
+    <p>We get our meats from AAA rated suppliers that hunt the greatest exotic animals in the world.</p>
+    <h2 style="font-family: 'Lora', serif;">How does it work?</h2>
+    <p>You click on the links to the left side of the page, select your choices, and select a shipping and payment plan. </p>
+  </div>
+</div>
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+</body>
+</html>
